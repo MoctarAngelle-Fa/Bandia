@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="bg-indigo-700 text-white">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-3xl font-bold">Mon Portfolio</div>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#" class="hover:text-gray-300">Compétences</a></li>
+          <li><a href="#" class="hover:text-gray-300">Projets</a></li>
+          <li><a href="#" class="hover:text-gray-300">Services</a></li>
+          <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section À propos -->
+  <section class="container mx-auto px-6 py-12">
+    <div class="flex flex-col md:flex-row items-center">
+      <div class="w-full md:w-1/2">
+        <h1 class="text-4xl font-bold">Salut, je suis Awa BANDIA</h1>
+        <p class="text-lg mt-4">Je suis AWA BANDIA. Passionné par le métier de référent digital...</p>
+        <button class="mt-6 px-6 py-3 bg-red-500 text-white rounded">Télécharger CV</button>
+      </div>
+      <div class="w-full md:w-1/2 mt-8 md:mt-0">
+        <img src="moi-removebg-preview-removebg-preview.png" alt="Image de profil" class="w-3/4 mx-auto rounded-full">
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Compétences -->
+  <section class="bg-pink-100 py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8">Compétences</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Compétence 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <h3 class="text-xl font-semibold">Planification et organisation de projet</h3>
+          <p class="mt-4">Je gère des projets avec des compétences en planification, organisation...</p>
+        </div>
+        <!-- Compétence 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <h3 class="text-xl font-semibold">Création de contenu</h3>
+          <p class="mt-4">Compétences en marketing de contenu, rédaction et création visuelle...</p>
+        </div>
+        <!-- Compétence 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">
+          <h3 class="text-xl font-semibold">Gestion de la communauté</h3>
+          <p class="mt-4">Expérience dans la gestion des réseaux sociaux et des communautés en ligne...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Projets réalisés -->
+  <section class="container mx-auto px-6 py-12">
+    <h2 class="text-3xl font-bold text-center mb-8">Projets réalisés</h2>
+    <div class="space-y-8">
+      <!-- Projet 1 -->
+      <div class="flex items-center">
+        <img src="Téléconseillers.jpg" alt="Image projet 1" class="w-1/3 rounded-lg">
+        <div class="ml-6">
+          <h3 class="text-2xl font-semibold">Yombalal</h3>
+          <p class="mt-2">Plateforme de prise de rendez-vous pour vos casiers judiciaires et passeports...</p>
+        </div>
+      </div>
+      <!-- Projet 2 -->
+      <div class="flex items-center">
+        <img src="Friperie à Marseille _ nos boutiques de vêtements vintage et rétro - Grizette.jpg" alt="Image projet 2" class="w-1/3 rounded-lg">
+        <div class="ml-6">
+          <h3 class="text-2xl font-semibold">VintageSenegal</h3>
+          <p class="mt-2">E-commerce spécialisé dans la vente de produits vintage et de Friperie...</p>
+        </div>
+      </div>
+      <!-- Projet 3 -->
+      <div class="flex items-center">
+        <img src="Heureuse femme afro-américaine avec ordinateur portable _ Photo Premium.jpg" alt="Image projet 3" class="w-1/3 rounded-lg">
+        <div class="ml-6">
+          <h3 class="text-2xl font-semibold">KaayeJangue</h3>
+          <p class="mt-2">Site de cours en ligne sur les métiers du digital mettant  en exergue notre langue locale...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Services -->
+  <section class="bg-pink-100 py-12">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8">Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">Brochures</div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">Réseaux sociaux</div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">Flyers</div>
+        <div class="bg-white p-6 rounded-lg shadow-md text-center">Cartes de visite</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Contact -->
+  <section class="container mx-auto px-6 py-12">
+    <h2 class="text-3xl font-bold text-center mb-8">Contact</h2>
+    <form class="space-y-6 max-w-lg mx-auto">
+      <input type="text" class="w-full px-4 py-2 rounded-md border" placeholder="Nom">
+      <input type="email" class="w-full px-4 py-2 rounded-md border" placeholder="Email">
+      <textarea class="w-full px-4 py-2 rounded-md border" rows="4" placeholder="Votre message"></textarea>
+      <button type="submit" class="w-full px-4 py-2 bg-red-500 text-white rounded-md">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-indigo-700 text-white py-6">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2024 Mon Portfolio. Tous droits réservés à Awa BANDIA.</p>
+      <div class="mt-4 space-x-4">
+        <a href="#"><img src="Icônes gratuites Logo De L'application Facebook conçues par Freepik.jpg" alt="Facebook" class="inline w-6"></a>
+        <a href="#"><img src="rb_45426.png" alt="Twitter" class="inline w-6"></a>
+        <a href="#"><img src="Icône LinkedIn _ Vecteur Premium.jpg" alt="LinkedIn" class="inline w-6"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
